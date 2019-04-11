@@ -8,6 +8,7 @@
         <meta name='description' content='Example Site Description'>
         <meta name='author' content='Femto Apps'>
 
+        <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic'>
         <link rel='stylesheet' href='../dist/main.css'>
     </head>
 
@@ -24,12 +25,12 @@
         </nav>
 
         <main>
-            <h2>This is a page title</h2>
+            <h2>This is a Page Title</h2>
 
             <section>
                 <h4>Blockquotes</h4>
                 <blockquote>
-                    <p>Hello, observe this block quote!</p>
+                    Hello, observe this block quote!
                 </blockquote>
             </section>
 
@@ -45,26 +46,26 @@
                 <h4>Lists</h4>
             
                 <row>
-                    <div class='column'>
+                    <column>
                         <ul>
                             <li>Unordered list item 1</li>
                             <li>Unordered list item 2</li>
                         </ul>
-                    </div>
+                    </column>
 
-                    <div class='column'>
+                    <column>
                         <ol>
                             <li>Ordered list item 1</li>
                             <li>Ordered list item 2</li>
                         </ol>
-                    </div>
+                    </column>
 
-                    <div class='column'>
+                    <column>
                         <dl>
                             <dt>Description list item 1</dt>
                             <dd>Description list item 1.1</dd>
                         </dl>
-                    </div>
+                    </column>
                 </row>
             </section>
 
@@ -137,19 +138,17 @@
                 </row>
 
                 <row>
-                    <column>.column</column>
-                    <column class="column-50 column-offset-25">.column column-50 column-offset-25</div>
+                    <column style='background: blue;'>.column</column>
+                    <column class="column-50 column-offset-25" style='background: white;'>.column column-50 column-offset-25</div>
                 </row>
             </section>
 
             <section>
                 <h4>Code</h4>
             
-                <pre><code>
-.style {
+                <pre><code>.style {
     color: #abcdef;
-}
-                </code></pre>
+}</code></pre>
             </section>
         </main>
 

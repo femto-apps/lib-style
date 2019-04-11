@@ -1,0 +1,34 @@
+blockquote {
+    border-left: 0.3rem solid $quote-left-border-color;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 1rem 1.5rem;
+}
+
+blockquote *:last-child {
+    margin-bottom: 0;
+}
+
+pre {
+    background: $quote-background-color;
+    border-left: 0.3rem solid $quote-left-border-color;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0rem 1.5rem;
+    overflow-y: hidden;
+}
+
+code {
+    background: $quote-background-color;
+    border-radius: .4rem;
+    margin: 0 .2rem;
+    padding: .2rem .5rem;
+    white-space: nowrap;
+}
+
+pre > code {
+    border-radius: 0;
+    display: block;
+    padding: 1rem 1.5rem;
+    white-space: pre;
+}
