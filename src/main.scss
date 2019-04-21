@@ -2,6 +2,7 @@
 @import 'partials/normalize';
 
 @import 'partials/buttons';
+@import 'partials/footer';
 @import 'partials/inputs';
 @import 'partials/layout';
 @import 'partials/navigation';
@@ -26,6 +27,10 @@ body {
     letter-spacing: .01em;
     line-height: 1.6;
 
+    position: relative;
+    min-height: 100%;
+    padding-bottom: 6rem;
+
     color: $text-color;
     background: $background-color;
 }
@@ -33,7 +38,7 @@ body {
 main {
     margin: 0 auto;
     max-width: 112.0rem;
-    padding: 0 2.0rem;
+    padding: 2.0rem 0;
     position: relative;
     width: 100%;
 }
