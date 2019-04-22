@@ -36,7 +36,7 @@ row column {
     }
 }
 
-section {
+nav > section, footer > section {
     max-width: 112.0rem;
     padding: 0rem 2.0rem;
     margin: auto auto;
