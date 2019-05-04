@@ -612,6 +612,10 @@ nav > section, footer > section {
   margin: auto auto;
 }
 
+section {
+  padding: 0rem 2rem;
+}
+
 .button,
 button,
 dd,
@@ -863,7 +867,8 @@ container {
 main {
   margin: 0 auto;
   max-width: 112rem;
-  padding: 2rem 0;
+  padding: 0rem 0rem;
+  padding-top: 2rem;
   position: relative;
   width: 100%;
   min-height: 100%;
