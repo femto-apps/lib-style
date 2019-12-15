@@ -3,6 +3,8 @@ nav {
     left: 0;
     max-width: 100%;
 
+    flex-grow: 0;
+
     background: $nav-background-color;
     border-bottom: .1rem solid $nav-border-bottom-color;
 }

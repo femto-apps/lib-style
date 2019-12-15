@@ -2,6 +2,8 @@ footer {
     max-width: 100%;
     padding: 1.6rem;
 
+    flex-grow: 0;
+
     background: $nav-background-color;
     border-top: .1rem solid $nav-border-bottom-color;
 }
