@@ -472,6 +472,7 @@ input[type=submit].button-clear[disabled]:hover {
 footer {
   max-width: 100%;
   padding: 1.6rem;
+  width: 100%;
   flex-grow: 0;
   background: #292c33;
   border-top: 0.1rem solid #1b1c1d;
@@ -662,6 +663,7 @@ nav {
   height: 5.2rem;
   left: 0;
   max-width: 100%;
+  width: 100%;
   flex-grow: 0;
   background: #292c33;
   border-bottom: 0.1rem solid #1b1c1d;
@@ -874,7 +876,6 @@ main {
   padding-top: 2rem;
   position: relative;
   width: 100%;
-  min-height: 100%;
   display: flex;
   flex-direction: column;
   align-items: left;
