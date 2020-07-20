@@ -1,28 +1,28 @@
 <!doctype html>
 
-<html lang='en'>
+<html lang="en">
     <head>
-        <meta charset='utf-8'>
+        <meta charset="utf-8">
 
         <title>An Example Page</title>
-        <meta name='description' content='Example Site Description'>
-        <meta name='author' content='Femto Apps'>
+        <meta name="description" content="Example Site Description">
+        <meta name="author" content="Femto Apps">
 
-        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic'>
-        <link rel='stylesheet' href='../src/main.scss'>
-    </head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+        <link rel="stylesheet" href="/main.b48d5170.css">
+    <script src="/main.b48d5170.js"></script></head>
 
     <body>
         <container>
             <nav>
                 <section>
-                    <a class='nav-title' href='/'>
+                    <a class="nav-title" href="/">
                         Example Site
                     </a>
 
-                    <ul class='nav-list float-right'>
-                        <li class='nav-item'><a href='/'>Example</a></li>
-                        <li class='nav-item'><a href='/'>Example</a></li>
+                    <ul class="nav-list float-right">
+                        <li class="nav-item"><a href="/">Example</a></li>
+                        <li class="nav-item"><a href="/">Example</a></li>
                     </ul>
                 </section>
             </nav>
@@ -43,8 +43,8 @@
                     <h4>Buttons</h4>
                     
                     <button>Default Button</button>
-                    <a class='button button-outline' href='#'>Outlined Button (link)</a>
-                    <input class='button-clear' type='submit' value='Clear Button (submit)'>
+                    <a class="button button-outline" href="#">Outlined Button (link)</a>
+                    <input class="button-clear" type="submit" value="Clear Button (submit)">
                 </section>
 
                 <section>
@@ -79,26 +79,26 @@
 
                     <form>
                         <fieldset>
-                            <label for='textInput'>Text Input</label>
-                            <input type='text' placeholder='Some Text Placeholder' id='textInput'>
+                            <label for="textInput">Text Input</label>
+                            <input type="text" placeholder="Some Text Placeholder" id="textInput">
 
-                            <label for='rangeInput'>Range Input</label>
-                            <select id='rangeInput'>
-                                <option value='0-10'>0-10</option>
-                                <option value='10-20'>10-20</option>
-                                <option value='20-30'>20-30</option>
-                                <option value='30-40'>30-40</option>
+                            <label for="rangeInput">Range Input</label>
+                            <select id="rangeInput">
+                                <option value="0-10">0-10</option>
+                                <option value="10-20">10-20</option>
+                                <option value="20-30">20-30</option>
+                                <option value="30-40">30-40</option>
                             </select>
 
-                            <label for='textAreaInput'>Text Area Input</label>
-                            <textarea placeholder='An input to the text area...' id='textAreaInput'></textarea>
+                            <label for="textAreaInput">Text Area Input</label>
+                            <textarea placeholder="An input to the text area..." id="textAreaInput"></textarea>
 
-                            <div class='float-right'>
-                                <input type='checkbox' id='checkboxInput'>
-                                <label class='label-inline' for='checkboxInput'>Checkbox Input</label>
+                            <div class="float-right">
+                                <input type="checkbox" id="checkboxInput">
+                                <label class="label-inline" for="checkboxInput">Checkbox Input</label>
                             </div>
 
-                            <input type='submit' value='Submit Form'>
+                            <input type="submit" value="Submit Form">
                         </fieldset>
                     </form>
                 </section>
@@ -143,9 +143,9 @@
                     </row>
 
                     <row>
-                        <column style='background: blue;'>.column</column>
-                        <column class="column-50 column-offset-25" style='background: white;'>.column column-50 column-offset-25</div>
-                    </row>
+                        <column style="background: blue;">.column</column>
+                        <column class="column-50 column-offset-25" style="background: white;">.column column-50 column-offset-25
+                    </column></row>
                 </section>
 
                 <section>
@@ -163,16 +163,23 @@
                         <input type="range" value="100" min="0" max="500" name="slider">
                         <counter>0</counter>
 
-                        <script>
-                            const sliders = Array.from(document.querySelectorAll('slider > counter'))
+                        <script>var sliders = Array.from(document.querySelectorAll('slider > counter'));
 
-                            for (let slider of sliders) {
-                                const func = () => { slider.innerHTML = slider.previousElementSibling.value }
-                                slider.previousElementSibling.addEventListener('input', func)
-                                slider.previousElementSibling.addEventListener('change', func)
-                                func()
-                            }
-                        </script>
+var _loop = function _loop() {
+  var slider = _sliders[_i];
+
+  var func = function func() {
+    slider.innerHTML = slider.previousElementSibling.value;
+  };
+
+  slider.previousElementSibling.addEventListener('input', func);
+  slider.previousElementSibling.addEventListener('change', func);
+  func();
+};
+
+for (var _i = 0, _sliders = sliders; _i < _sliders.length; _i++) {
+  _loop();
+}</script>
                     </slider>
                 </section>
             </main>
