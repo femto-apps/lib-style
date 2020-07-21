@@ -177,3 +177,24 @@ input::-moz-focus-inner,
 input::-moz-focus-outer {
   border: 0;
 }
+
+.hyperlink {
+  align-items: normal !important;
+  background-color: rgba(0,0,0,0) !important;
+  border-color: rgb(0, 0, 238) !important;
+  border-style: none !important;
+  box-sizing: content-box !important;
+  cursor: pointer !important;
+  display: inline !important;
+  font: inherit !important;
+  padding: 0 !important;
+  text-align: start !important;
+  text-decoration: none !important;
+  text-transform: none !important;
+  letter-spacing: .01em !important;
+  color: #b881d9 !important;
+}
+
+.hyperlink:hover, .hyperlink:focus {
+  color: #606c76 !important;
+}

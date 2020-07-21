@@ -26,6 +26,11 @@ row column {
         padding: 0 1.0rem;
     }
 
+    row column.column-20 {
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+
     row column.column-50 {
         flex: 0 0 50%;
         max-width: 50%;
@@ -85,4 +90,8 @@ ul {
 
 .float-right {
   float: right;
+}
+
+.no-bottom {
+  margin-bottom: 0px;
 }
