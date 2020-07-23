@@ -60,6 +60,12 @@ option {
   color: black;
 }
 
+select option {
+  background: #202020;
+  color: #fff;
+  border-color: #9b4dca;
+}
+
 textarea {
   min-height: 6.5rem;
 }
