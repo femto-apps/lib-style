@@ -1,0 +1,10 @@
+include navbar.pug
+include footer.pug
+
+mixin blank (props = {})
+    container
+        +navbar(props)
+        main
+        if props.footer
+            +footer(props)
+                section=props.footer

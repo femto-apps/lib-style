@@ -1,0 +1,8 @@
+mixin navbar (props = {})
+    nav
+        section
+            a.nav-title(href=props.homepage)= props.name
+            ul.nav-list.float-right
+                for item in props.navItems
+                    li.nav-item
+                        a(href=item.href)= item.name

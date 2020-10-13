@@ -1,0 +1,107 @@
+container
+    nav
+        section
+            a.nav-title(href="/")
+                | Example Site
+            ul.nav-list.float-right
+                li.nav-item
+                    a(href="/") Example
+                li.nav-item
+                    a(href="/") Example
+    main
+        section
+            h2 This is a Page Title
+        section
+            h4 Blockquotes
+            blockquote
+                | Hello, observe this block quote!
+        section
+            h4 Buttons
+            button Default Button
+            a.button.button-outline(href="#") Outlined Button (link)
+            input.button-clear(type="submit" value="Clear Button (submit)")
+        section
+            h4 Lists
+            row
+                column
+                    ul
+                        li Unordered list item 1
+                        li Unordered list item 2
+                column
+                    ol
+                        li Ordered list item 1
+                        li Ordered list item 2
+                column
+                    dl
+                        dt Description list item 1
+                        dd Description list item 1.1
+        section
+            h4 Forms
+            form
+                fieldset
+                    label(for="textInput") Text Input
+                    input#textInput(type="text" placeholder="Some Text Placeholder")
+                    label(for="rangeInput") Range Input
+                    select#rangeInput
+                        option(value="0-10") 0-10
+                        option(value="10-20") 10-20
+                        option(value="20-30") 20-30
+                        option(value="30-40") 30-40
+                    label(for="textAreaInput") Text Area Input
+                    textarea#textAreaInput(placeholder="An input to the text area...")
+                    .float-right
+                        input#checkboxInput(type="checkbox")
+                        label.label-inline(for="checkboxInput") Checkbox Input
+                    input(type="submit" value="Submit Form")
+        section
+            h4 Tables
+            table
+                thead
+                    tr
+                        th Some
+                        th Table
+                        th Row
+                        th Names
+                tbody
+                    tr
+                        td Example Data
+                        td 64
+                        td 5,345
+                        td Place, Location
+                    tr
+                        td More Information
+                        td 12
+                        td 1,583
+                        td Somewhere, World
+        section
+            h4 Grids
+            row
+                column .column
+                column .column
+                column .column
+                column .column
+            row
+                column(style="background: blue;") .column
+                column.column-50.column-offset-25(style="background: white;")
+                    | .column column-50 column-offset-25
+        section
+            h4 Code
+            pre.
+                
+        section
+            h4 Sliders
+            label(for="slider") An example slider:
+            slider
+                input(type="range" value="100" min="0" max="500" name="slider")
+                counter 0
+                script.
+                    const sliders = Array.from(document.querySelectorAll('slider > counter'))
+                    for (let slider of sliders) {
+                    const func = () => { slider.innerHTML = slider.previousElementSibling.value }
+                    slider.previousElementSibling.addEventListener('input', func)
+                    slider.previousElementSibling.addEventListener('change', func)
+                    func()
+                    }
+    footer
+        section
+            | This is some example footer content.  You can make it really long and see what happens, because I don't quite know what will happen if it is really long.
