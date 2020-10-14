@@ -1,0 +1,3 @@
+mixin flash (flash)
+    if errors.length
+        blockquote #{errors.length > 1 ? 'Errors' : 'Error'}: #{errors.map(error => error.display)}
