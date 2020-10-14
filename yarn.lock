@@ -1270,7 +1270,7 @@
     react "^16.8.3"
     regenerator-runtime "^0.13.3"
 
-"@storybook/addon-controls@6.0.26":
+"@storybook/addon-controls@6.0.26", "@storybook/addon-controls@^6.0.26":
   version "6.0.26"
   resolved "https://registry.yarnpkg.com/@storybook/addon-controls/-/addon-controls-6.0.26.tgz#4cc4c30ee7bf89ab873158ead4d25d6f7e07ffba"
   integrity sha512-K3Oik9ClpShv8Qc6JeNwtmd4yJJcnO2nyaAYYFiyNt+Vsg7zMaDtE2wfvViThNKjX7nUXIeh+OscseIkdWgLuA==
@@ -8669,7 +8669,7 @@ sane@^4.0.3:
     minimist "^1.1.1"
     walker "~1.0.5"
 
-sass@^1.26.10:
+sass@^1.27.0:
   version "1.27.0"
   resolved "https://registry.yarnpkg.com/sass/-/sass-1.27.0.tgz#0657ff674206b95ec20dc638a93e179c78f6ada2"
   integrity sha512-0gcrER56OkzotK/GGwgg4fPrKuiFlPNitO7eUJ18Bs+/NBlofJfMxmxqpqJxjae9vu0Wq8TZzrSyxZal00WDig==

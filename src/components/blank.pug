@@ -5,6 +5,13 @@ mixin blank (props = {})
     container
         +navbar(props)
         main
+            block
+
         if props.footer
             +footer(props)
-                section=props.footer
+                section
+                    for link, index in props.footer
+                        if index === props.footer.length - 1
+                            span #[a(href=link.href)= link.name]
+                        else
+                            span #[a(href=link.href)= link.name] | 

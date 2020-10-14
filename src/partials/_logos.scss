@@ -1,0 +1,35 @@
+logo {
+	flex-direction: row;
+	font-weight: 700;
+	border-radius: 8px;
+	border-style: solid;
+	border-width: 1px;
+	display: flex;
+	height: 64px;
+	flex: initial;
+	margin: 10px;
+	width: 300px;
+	.logo {
+		width: 64px;
+		flex: initial;
+		display: flex;
+		position: relative;
+		background-color: inherit;
+	}
+	.label {
+		text-align: center;
+		flex: 1;
+		margin: 0;
+		align-items: center;
+		justify-content: center;
+		border-left: 1px solid;
+		border-left-color: currentcolor;
+		display: flex;
+		border-color: inherit;
+	}
+}
+
+logo.discord {
+	color: #7289DA;
+	border-color: #b9b9b9;
+}

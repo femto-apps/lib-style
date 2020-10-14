@@ -1,0 +1,25 @@
+hr {
+	border: 0;
+	height: 1px;
+	width: 10%;
+	position: relative;
+	margin: 30px auto;
+}
+hr.center-ball {
+	background: $text-color;
+	&:before {
+		content: "";
+		width: 6px;
+		height: 6px;
+		background: $text-color;
+		display: inline-block;
+		border: 2px solid $text-color;
+		-moz-border-radius: 50%;
+		-webkit-border-radius: 50%;
+		border-radius: 50%;
+		position: absolute;
+		top: -4px;
+		left: 50%;
+		margin: 0 0 0 -3px;
+	}
+}

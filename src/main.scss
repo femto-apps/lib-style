@@ -2,9 +2,11 @@
 @import 'partials/normalize';
 
 @import 'partials/buttons';
+@import 'partials/decorations';
 @import 'partials/footer';
 @import 'partials/inputs';
 @import 'partials/layout';
+@import 'partials/logos';
 @import 'partials/navigation';
 @import 'partials/quotes';
 @import 'partials/tables';
@@ -47,7 +49,7 @@ container {
 main {
     margin: 0 auto;
     max-width: 112.0rem;
-	padding: 0rem 0rem;
+	// padding: 0rem 0rem;
 	padding-top: 2.0rem;
     position: relative;
     width: 100%;

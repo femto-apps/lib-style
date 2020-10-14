@@ -1,0 +1,82 @@
+mixin user_selector_link (props = {})
+    
+
+    li.nav-item.expander
+        a(href='#user_selector')= users.current().username + ' ▾'
+
+mixin user_selector_popup (props = {})
+    style.
+        .overlay {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            transition: opacity 500ms;
+            visibility: hidden;
+            opacity: 0;
+        }
+
+        .overlay:target {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .popup {
+            margin: 70px auto;
+            padding: 20px;
+            background: #202020;
+            border-radius: 5px;
+            width: 30%;
+            position: relative;
+            transition: background-color 2s;
+        }
+
+        .popup .close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            transition: all 200ms;
+            font-size: 30px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .popup .content {
+            max-height: 30%;
+            overflow: auto;
+        }
+
+        @media screen and (max-width: 700px){
+            .box{
+                width: 70%;
+            }
+            .popup{
+                width: 70%;
+            }
+        }
+
+    #user_selector.overlay
+        .popup
+            if users && users.current()
+                h2= users.current().username
+                a(href='#').close &times;
+
+                table
+                    thead
+                        tr
+                            th Username
+                            th
+                            th
+                    tbody
+                        for user in users.all()
+                            tr
+                                td= user.username
+                                td
+                                    a(href='/switch?id=' + encodeURIComponent(user._id)) Switch To
+                                td
+                                    a(href='/switch?id=' + encodeURIComponent(user._id)) Settings
+
+                a(href='/login') Add New Account
+                a(href='/logoutAll').float-right Logout All Accounts
